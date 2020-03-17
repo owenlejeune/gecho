@@ -1,7 +1,9 @@
-git fetch
 CURDIR=$PWD
 GDIR=$HOME/.gecho
+
 cd $GDIR
+git fetch
+
 HEADHASH=$(git rev-parse HEAD)
 UPSTREAMHASH=$(git rev-parse master)
 
