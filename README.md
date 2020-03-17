@@ -3,9 +3,11 @@ A colourful echo experience
 
 ### Installation
 **via curl**
+
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/owenlejeune/gecho/master/tools/install.sh)"`
 
 **via wget**
+
 `sh -c "$(wget -0- https://raw.githubusercontent.com/owenlejeune/gecho/master/tools/install.sh)"`
 
 gecho includes an optional oh-my-bash and oh-my-zsh plugin, which will ask to be installed upon installation
