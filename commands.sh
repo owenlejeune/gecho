@@ -22,7 +22,7 @@ function gecho() {
   if [ $# -eq 0 ]; then
     recho "No arguments given."
     ARG="-h"
-  else [ $# -eq 1 ]; then
+  elif [ $# -eq 1 ]; then
     recho "Not enough arguments given."
     ARG="-h"
   fi

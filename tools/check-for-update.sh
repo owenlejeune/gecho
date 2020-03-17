@@ -4,11 +4,12 @@ REMOTE=$(git rev-parse "$UPSTREAM")
 BASE=$(git merge-base @ "$UPSTREAM")
 
 if [ $LOCAL = $BASE ]; then
-  read -p "Gecho update available, would you like to install? [y/N] " yn
-  case $yn
+  echo -n 'Gecho update available, would you like to install? [y/N] '
+  read yn
+  case $yn in
     [Yy]* )
       git pull origin master;;
-    [Nn]* ) exit;;
+    [Nn]* ) ;;
     *) echo "Please enter y or n";;
   esac
 fi
