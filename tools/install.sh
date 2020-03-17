@@ -1,6 +1,6 @@
 echo "Installing gecho"
 
-REPO=""
+REPO="https://github.com/owenlejeune/gecho"
 GDIR="$HOME/.gecho"
 INSTALL=0
 
