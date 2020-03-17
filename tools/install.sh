@@ -45,6 +45,6 @@ if [ -d "$HOME/.oh-my-zsh" ]; then
   esac
 fi
 
-if [ INSTALL -eq 0 ]; then
+if [ $INSTALL -eq 0 ]; then
   echo "To use gecho, add 'source \$HOME/.gecho/gecho.sh' to your shell rc file."
 fi
