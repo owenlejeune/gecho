@@ -1,4 +1,7 @@
 git fetch
+CURDIR=$PWD
+GDIR=$HOME/.gecho
+cd $GDIR
 HEADHASH=$(git rev-parse HEAD)
 UPSTREAMHASH=$(git rev-parse master)
 
@@ -12,3 +15,5 @@ if [ "$HEADHASH" != "$UPSTREAMHASH" ]; then
     *) echo "Please enter y or n";;
   esac
 fi
+
+cd $CURDIR
