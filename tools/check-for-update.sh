@@ -1,9 +1,8 @@
-UPSTREAM=${1:-'@{u}'}
-LOCAL=$(git rev-parse @)
-REMOTE=$(git rev-parse "$UPSTREAM")
-BASE=$(git merge-base @ "$UPSTREAM")
+git fetch
+HEADHASH=$(git rev-parse HEAD)
+UPSTREAMHASH=$(git rev-parse master)
 
-if [ $LOCAL = $BASE ]; then
+if [ "$HEADHASH" != "$UPSTREAMHASH" ]; then
   echo -n 'Gecho update available, would you like to install? [y/N] '
   read yn
   case $yn in
